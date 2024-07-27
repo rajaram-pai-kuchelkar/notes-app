@@ -4,6 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content', "@nuxt/image"],
   routeRules: {
-    '/notes-app': { prerender: true }
+    '/': { prerender: true }
   }
 })
