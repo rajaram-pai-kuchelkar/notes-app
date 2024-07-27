@@ -29,6 +29,7 @@ import 'rehype-raw';
 import 'detab';
 import 'hast-util-to-string';
 import 'github-slugger';
+import 'ipx';
 import '../routes/renderer.mjs';
 import 'vue-bundle-renderer/runtime';
 import 'devalue';

@@ -32,6 +32,7 @@ import 'rehype-raw';
 import 'detab';
 import 'hast-util-to-string';
 import 'github-slugger';
+import 'ipx';
 import 'vue-bundle-renderer/runtime';
 import 'devalue';
 import '@unhead/ssr';
@@ -691,7 +692,7 @@ const _routes = [
   {
     name: "slug",
     path: "/:slug(.*)*",
-    component: () => import('./_...slug_-VJk_nzlp.mjs').then((m) => m.default || m)
+    component: () => import('./_...slug_-dJCE59my.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1008,12 +1009,12 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyContentDoc = defineAsyncComponent(() => import('./ContentDoc-qmyBfB3j.mjs').then((r) => r["default"] || r.default || r));
-const LazyContentList = defineAsyncComponent(() => import('./ContentList-UoE-0lwJ.mjs').then((r) => r["default"] || r.default || r));
-const LazyContentNavigation = defineAsyncComponent(() => import('./ContentNavigation-9LpRkV0M.mjs').then((r) => r["default"] || r.default || r));
-const LazyContentQuery = defineAsyncComponent(() => import('./ContentQuery-g9itBlyu.mjs').then((r) => r["default"] || r.default || r));
-const LazyContentRenderer = defineAsyncComponent(() => import('./ContentRenderer-BJeqDpz6.mjs').then((r) => r["default"] || r.default || r));
-const LazyContentRendererMarkdown = defineAsyncComponent(() => import('./ContentRendererMarkdown-yzsIqnv-.mjs').then((r) => r["default"] || r.default || r));
+const LazyContentDoc = defineAsyncComponent(() => import('./ContentDoc-Dff6AL6U.mjs').then((r) => r["default"] || r.default || r));
+const LazyContentList = defineAsyncComponent(() => import('./ContentList-CgFn6Vq2.mjs').then((r) => r["default"] || r.default || r));
+const LazyContentNavigation = defineAsyncComponent(() => import('./ContentNavigation-BeRrAUbG.mjs').then((r) => r["default"] || r.default || r));
+const LazyContentQuery = defineAsyncComponent(() => import('./ContentQuery-DW7Ndvtq.mjs').then((r) => r["default"] || r.default || r));
+const LazyContentRenderer = defineAsyncComponent(() => import('./ContentRenderer-D75OBXAw.mjs').then((r) => r["default"] || r.default || r));
+const LazyContentRendererMarkdown = defineAsyncComponent(() => import('./ContentRendererMarkdown-z-oPqjeL.mjs').then((r) => r["default"] || r.default || r));
 const LazyContentSlot = defineAsyncComponent(() => import('./ContentSlot-Dc79taaE.mjs').then((r) => r["default"] || r.default || r));
 const LazyDocumentDrivenEmpty = defineAsyncComponent(() => import('./DocumentDrivenEmpty-CVfz7tly.mjs').then((r) => r["default"] || r.default || r));
 const LazyDocumentDrivenNotFound = defineAsyncComponent(() => import('./DocumentDrivenNotFound-4pTrsASA.mjs').then((r) => r["default"] || r.default || r));
@@ -1021,7 +1022,7 @@ const LazyMarkdown = defineAsyncComponent(() => import('./Markdown-Ccka2iJz.mjs'
 const LazyProseCode = defineAsyncComponent(() => import('./ProseCode-pTmlp-wa.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseCodeInline = defineAsyncComponent(() => import('./ProseCodeInline-BJ1eZOBK.mjs').then((r) => r["default"] || r.default || r));
 const LazyProsePre = defineAsyncComponent(() => import('./ProsePre-B0teryc4.mjs').then((r) => r["default"] || r.default || r));
-const LazyProseA = defineAsyncComponent(() => import('./ProseA-G16Q3Gzg.mjs').then((r) => r["default"] || r.default || r));
+const LazyProseA = defineAsyncComponent(() => import('./ProseA-iJ9_ix0B.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseBlockquote = defineAsyncComponent(() => import('./ProseBlockquote-q_XAO91g.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseEm = defineAsyncComponent(() => import('./ProseEm-BxwY840j.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseH1 = defineAsyncComponent(() => import('./ProseH1-ryYvJlLw.mjs').then((r) => r["default"] || r.default || r));
@@ -1031,7 +1032,7 @@ const LazyProseH4 = defineAsyncComponent(() => import('./ProseH4-DZek9v7S.mjs').
 const LazyProseH5 = defineAsyncComponent(() => import('./ProseH5-BFa8VZxf.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseH6 = defineAsyncComponent(() => import('./ProseH6-BO81xXrI.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseHr = defineAsyncComponent(() => import('./ProseHr-DAinspuU.mjs').then((r) => r["default"] || r.default || r));
-const LazyProseImg = defineAsyncComponent(() => import('./ProseImg-ImarqNZh.mjs').then((r) => r["default"] || r.default || r));
+const LazyProseImg = defineAsyncComponent(() => import('./ProseImg-CTASPib3.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseLi = defineAsyncComponent(() => import('./ProseLi-DSMoYsXb.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseOl = defineAsyncComponent(() => import('./ProseOl-qPWKIxNG.mjs').then((r) => r["default"] || r.default || r));
 const LazyProseP = defineAsyncComponent(() => import('./ProseP-CaZnlGq4.mjs').then((r) => r["default"] || r.default || r));
@@ -1278,8 +1279,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-CfBqIZ0l.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-C9bPTPhK.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-DfWr1RYH.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-B160-D8u.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1360,5 +1361,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, useRuntimeConfig as a, useNuxtApp as b, asyncDataDefaults as c, createError as d, entry$1 as default, useRouter as e, resolveRouteObject as f, navigateTo as g, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRoute as u };
+export { _export_sfc as _, useRuntimeConfig as a, useNuxtApp as b, asyncDataDefaults as c, createError as d, entry$1 as default, useRouter as e, navigateTo as f, resolveUnrefHeadInput as g, injectHead as i, nuxtLinkDefaults as n, resolveRouteObject as r, useRoute as u };
 //# sourceMappingURL=server.mjs.map

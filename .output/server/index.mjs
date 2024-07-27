@@ -1,6 +1,6 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import 'node:http';
 import 'node:https';
-export { P as default } from './chunks/runtime.mjs';
+export { S as default } from './chunks/runtime.mjs';
 import 'fs';
 import 'path';
 import 'node:fs';
@@ -26,4 +26,5 @@ import 'rehype-raw';
 import 'detab';
 import 'hast-util-to-string';
 import 'github-slugger';
+import 'ipx';
 //# sourceMappingURL=index.mjs.map
